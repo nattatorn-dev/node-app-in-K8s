@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: node-app-job
+spec:
+  #completions: 2
+  #parallelism: 2
+  #backoffLimit: 2
+  activeDeadlineSeconds: 15
+  template:
+    spec:
+      containers:
+      - name: node-app-job
+        image: alpine
+        #command: ["ls", "/data"]
+        #command: ["echo", "Welcome to my Node app"]
+        command: ["sleep", "40"]
+      restartPolicy: Never
