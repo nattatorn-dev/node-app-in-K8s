@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: node-app-job
-        image: alpine
+        image: randilt/node-app:1.0
         #command: ["ls", "/data"]
         #command: ["echo", "Welcome to my Node app"]
         command: ["sleep", "40"]
