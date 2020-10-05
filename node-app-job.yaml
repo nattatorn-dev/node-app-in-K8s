@@ -2,6 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: node-app-job
+  namespace: node-app
 spec:
   #completions: 2
   #parallelism: 2
