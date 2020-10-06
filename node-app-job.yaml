@@ -6,14 +6,14 @@ metadata:
 spec:
   #completions: 2
   #parallelism: 2
-  #backoffLimit: 2
-  activeDeadlineSeconds: 15
+  backoffLimit: 2
+  #activeDeadlineSeconds: 15
   template:
     spec:
       containers:
       - name: node-app-job
         image: randilt/node-app:1.0
         #command: ["ls", "/data"]
-        #command: ["echo", "Welcome to my Node app"]
-        command: ["sleep", "40"]
+        command: ["echo", "Welcome to my Node app"]
+        #command: ["sleep", "40"]
       restartPolicy: Never
